@@ -207,7 +207,7 @@ where	A.Current_AQI > B.Current_AQI order by A.State,District1,District2;
 select State, avg(Current_AQI) as avg_c from india_aqi group by State
 having avg(Current_AQI)>( select avg(Most_AQI_Reached) from india_aqi where State like "kerala");
 
--- 60. Which 5 districts in Gujrat had the highest 'most reached aqi'  and what was the 'major source of aqi' for each?"
+-- 60. Which 5 districts in Gujrat had the highest 'most reached aqi'  and what was the 'major source of aqi' for each?
 select Most_AQI_Reached, Major_source_of_pollution from india_aqi order by Most_AQI_Reached DESC limit 5;
 
 -- 61. List districts in Karnataka, ordered by Most_Reached_AQI in ascending orders
