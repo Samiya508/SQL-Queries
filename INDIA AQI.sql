@@ -130,10 +130,10 @@ Select avg(Most_AQI_Reached) as most_aqi , State from india_aqi  group by State 
 -- 41.List the top 3 states with the lowest average Current_AQI.
 select avg(Current_AQI) as cur_aqi , State from india_aqi  group by State order by avg(Current_AQI) limit 3;
 
--- 42..Find the standard deviation of Current_AQI for a specific state, like 'Maharashtra'.
+-- 42..Find the standard deviation of Current_AQI for a specific state like maharashtra
 
 select stddev(Current_AQI) stdAQI_maharashtra from india_aqi
-where State="Maharashtra” AND Current_AQI IS NOT NULL;
+where State=Maharashtra AND Current_AQI IS NOT NULL;
 
 -- 43.Find the median Current_AQI for the entire dataset requires more complex SQL, e.g., window functions
 
