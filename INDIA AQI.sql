@@ -131,6 +131,7 @@ Select avg(Most_AQI_Reached) as most_aqi , State from india_aqi  group by State 
 select avg(Current_AQI) as cur_aqi , State from india_aqi  group by State order by avg(Current_AQI) limit 3;
 
 -- 42..Find the standard deviation of Current_AQI for a specific state, like 'Maharashtra'.
+
 select stddev(Current_AQI) stdAQI_maharashtra from india_aqi
 where State="Maharashtra”  AND Current_AQI IS NOT NULL;
 
