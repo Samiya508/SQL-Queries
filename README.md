@@ -1,6 +1,9 @@
 # SQL-Queries
-DATASET: INDIA AQI 100 QUERIES Basic To Advance:
+DATASET: INDIA AQI 
+  100 QUERIES Basic To Advance:
 
-DATASEt: Healthcare 200 Queries
+DATASEt: Healthcare
+  200 Queries
 
 DATASET: Breast Cancer Stat & Awareness
+  100 Queries
